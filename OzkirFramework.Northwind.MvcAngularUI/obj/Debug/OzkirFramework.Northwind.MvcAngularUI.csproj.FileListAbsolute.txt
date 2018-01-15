@@ -1,0 +1,1 @@
+C:\Users\FatihOzkir\Documents\Visual Studio 2015\Projects\OzkirFramework\OzkirFramework.Northwind.MvcAngularUI\obj\Debug\OzkirFramework.Northwind.MvcAngularUI.csprojResolveAssemblyReference.cache

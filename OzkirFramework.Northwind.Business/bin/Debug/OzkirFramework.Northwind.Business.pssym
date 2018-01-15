@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols LinesOfCode="91" PostSharpLinesOfCode="0" xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[OzkirFramework.Core]OzkirFramework.Core.Aspects.Postsharp.LogAspects.LogAspect">
+    <Instance Declaration="#2=A:OzkirFramework.Northwind.Business" Id="3b9cda43001072bf">
+      <Target Target="#3=M:[OzkirFramework.Northwind.Business]OzkirFramework.Northwind.Business.Concrete.Managers.ProductManager::getAll()">
+        <JoinPoint Advising="#1" Description="#4=Wrapped by advice(s) OnEntry, OnSuccess, OnException, OnExit" Ordinal="6" />
+      </Target>
+      <Target Target="#5=M:[OzkirFramework.Northwind.Business]OzkirFramework.Northwind.Business.Concrete.Managers.ProductManager::Insert(OzkirFramework.Northwind.Entities.Concrete.Product)">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="14" />
+      </Target>
+      <Target Target="#6=M:[OzkirFramework.Northwind.Business]OzkirFramework.Northwind.Business.Concrete.Managers.ProductManager::TransactionalOperation(OzkirFramework.Northwind.Entities.Concrete.Product, OzkirFramework.Northwind.Entities.Concrete.Product)">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="19" />
+      </Target>
+      <Target Target="#7=M:[OzkirFramework.Northwind.Business]OzkirFramework.Northwind.Business.Concrete.Managers.ProductManager::Update(OzkirFramework.Northwind.Entities.Concrete.Product)">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="23" />
+      </Target>
+      <Target Target="#8=M:[OzkirFramework.Northwind.Business]OzkirFramework.Northwind.Business.Concrete.Managers.OrderManager::getAllOrders()">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="28" />
+      </Target>
+      <Target Target="#9=M:[OzkirFramework.Northwind.Business]OzkirFramework.Northwind.Business.Concrete.Managers.ProductManager::getById(System.Int32)">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="9" />
+      </Target>
+      <Target Target="#10=M:[OzkirFramework.Northwind.Business]OzkirFramework.Northwind.Business.Concrete.Managers.UserManager::GetByUsernameAndPassword(System.String, System.String)">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="33" />
+      </Target>
+      <Target Target="#11=M:[OzkirFramework.Northwind.Business]OzkirFramework.Northwind.Business.Concrete.Managers.UserManager::GetUserRoles(OzkirFramework.Northwind.Entities.Concrete.User)">
+        <JoinPoint Advising="#1" Description="#4" Ordinal="36" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#12=T:[OzkirFramework.Core]OzkirFramework.Core.Aspects.Postsharp.PerformanceAspects.PerformanceCounterAspect">
+    <Instance Declaration="#2" Id="3b9cda4380005bb2">
+      <Target Target="#3">
+        <JoinPoint Advising="#12" Description="#4" Ordinal="5" />
+      </Target>
+      <Target Target="#5">
+        <JoinPoint Advising="#12" Description="#4" Ordinal="13" />
+      </Target>
+      <Target Target="#6">
+        <JoinPoint Advising="#12" Description="#4" Ordinal="18" />
+      </Target>
+      <Target Target="#7">
+        <JoinPoint Advising="#12" Description="#4" Ordinal="22" />
+      </Target>
+      <Target Target="#13=M:[OzkirFramework.Northwind.Business]OzkirFramework.Northwind.Business.Concrete.Managers.OrderManager::#ctor([OzkirFramework.Northwind.Business]OzkirFramework.Northwind.Business.Abstract.IOrderService)">
+        <JoinPoint Advising="#12" Description="#4" Ordinal="25" />
+      </Target>
+      <Target Target="#8">
+        <JoinPoint Advising="#12" Description="#4" Ordinal="26" />
+      </Target>
+      <Target Target="#14=M:[OzkirFramework.Northwind.Business]OzkirFramework.Northwind.Business.Concrete.Managers.ProductManager::#ctor(OzkirFramework.Northwind.DataAccess.Abstract.IProductDal, AutoMapper.IMapper)">
+        <JoinPoint Advising="#12" Description="#4" />
+      </Target>
+      <Target Target="#9">
+        <JoinPoint Advising="#12" Description="#4" Ordinal="7" />
+      </Target>
+      <Target Target="#15=M:[OzkirFramework.Northwind.Business]OzkirFramework.Northwind.Business.Concrete.Managers.UserManager::#ctor(OzkirFramework.Northwind.DataAccess.Abstract.IUserDal)">
+        <JoinPoint Advising="#12" Description="#4" Ordinal="30" />
+      </Target>
+      <Target Target="#10">
+        <JoinPoint Advising="#12" Description="#4" Ordinal="31" />
+      </Target>
+      <Target Target="#11">
+        <JoinPoint Advising="#12" Description="#4" Ordinal="34" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#3" Id="3b9cda433177b606">
+      <Target>
+        <JoinPoint Advising="#12" Description="#4" Ordinal="2" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#16=T:[OzkirFramework.Core]OzkirFramework.Core.Aspects.Postsharp.ValidationAspects.FluentValidationAspect">
+    <Instance Declaration="#5" Id="3b9cda430d5dd540">
+      <Target>
+        <JoinPoint Advising="#16" Description="#4" Ordinal="10" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#6" Id="3b9cda4385b14f1c">
+      <Target>
+        <JoinPoint Advising="#16" Description="#4" Ordinal="15" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#7" Id="3b9cda43eeb4c549">
+      <Target>
+        <JoinPoint Advising="#16" Description="#4" Ordinal="20" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#17=T:[OzkirFramework.Core]OzkirFramework.Core.Aspects.Postsharp.CacheAspect.CacheRemoveAspect">
+    <Instance Declaration="#5" Id="3b9cda4381d481dd">
+      <Target>
+        <JoinPoint Advising="#17" Description="#4" Ordinal="11" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#18=T:[OzkirFramework.Core]OzkirFramework.Core.Aspects.Postsharp.TransactionAspects.TransactionScopeAspect">
+    <Instance Declaration="#6" Id="3b9cda433e6be5a2">
+      <Target>
+        <JoinPoint Advising="#18" Description="#4" Ordinal="16" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#19=T:[OzkirFramework.Core]OzkirFramework.Core.Aspects.Postsharp.ExceptionAspect.ExceptionLogAspect">
+    <Instance Declaration="#2" Id="3b9cda43821ea859">
+      <Target Target="#3">
+        <JoinPoint Advising="#19" Description="#20=Wrapped by advice(s) OnException" Ordinal="3" />
+      </Target>
+      <Target Target="#5">
+        <JoinPoint Advising="#19" Description="#20" Ordinal="12" />
+      </Target>
+      <Target Target="#6">
+        <JoinPoint Advising="#19" Description="#20" Ordinal="17" />
+      </Target>
+      <Target Target="#7">
+        <JoinPoint Advising="#19" Description="#20" Ordinal="21" />
+      </Target>
+      <Target Target="#13">
+        <JoinPoint Advising="#19" Description="#20" Ordinal="24" />
+      </Target>
+      <Target Target="#8">
+        <JoinPoint Advising="#19" Description="#20" Ordinal="27" />
+      </Target>
+      <Target Target="#14">
+        <JoinPoint Advising="#19" Description="#20" Ordinal="0" />
+      </Target>
+      <Target Target="#9">
+        <JoinPoint Advising="#19" Description="#20" Ordinal="8" />
+      </Target>
+      <Target Target="#15">
+        <JoinPoint Advising="#19" Description="#20" Ordinal="29" />
+      </Target>
+      <Target Target="#10">
+        <JoinPoint Advising="#19" Description="#20" Ordinal="32" />
+      </Target>
+      <Target Target="#11">
+        <JoinPoint Advising="#19" Description="#20" Ordinal="35" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#21=T:[OzkirFramework.Core]OzkirFramework.Core.Aspects.Postsharp.CacheAspect.CacheAspect">
+    <Instance Declaration="#3" Id="3b9cda4321ec7e36">
+      <Target>
+        <JoinPoint Advising="#21" Description="#22=Intercepted by OnInvoke" Ordinal="4" />
+      </Target>
+    </Instance>
+  </Class>
+  <Annotation Target="#23=M:[OzkirFramework.Core]OzkirFramework.Core.Aspects.Postsharp.PerformanceAspects.PerformanceCounterAspect::OnEntry(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#24=2" Description="#25=PostSharp estimates that 2 line(s) of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
+  <Annotation Target="#26=M:[PostSharp]PostSharp.Aspects.OnMethodBoundaryAspect::OnSuccess([PostSharp]PostSharp.Aspects.MethodExecutionArgs)" Arguments="#24" Description="#25" />
+  <Annotation Target="#27=M:[OzkirFramework.Core]OzkirFramework.Core.Aspects.Postsharp.PerformanceAspects.PerformanceCounterAspect::OnExit(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#24" Description="#25" />
+  <Annotation Target="#28=M:[PostSharp]PostSharp.Aspects.OnMethodBoundaryAspect::OnException([PostSharp]PostSharp.Aspects.MethodExecutionArgs)" Arguments="#24" Description="#25" />
+  <Annotation Target="#29=M:[OzkirFramework.Core]OzkirFramework.Core.Aspects.Postsharp.ExceptionAspect.ExceptionLogAspect::OnException(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#24" Description="#25" />
+  <Annotation Target="#30=M:[OzkirFramework.Core]OzkirFramework.Core.Aspects.Postsharp.LogAspects.LogAspect::OnEntry(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#24" Description="#25" />
+  <Annotation Target="#31=M:[PostSharp]PostSharp.Aspects.OnMethodBoundaryAspect::OnExit([PostSharp]PostSharp.Aspects.MethodExecutionArgs)" Arguments="#24" Description="#25" />
+  <Annotation Target="#32=M:[OzkirFramework.Core]OzkirFramework.Core.Aspects.Postsharp.ValidationAspects.FluentValidationAspect::OnEntry(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#24" Description="#25" />
+  <Annotation Target="#33=M:[PostSharp]PostSharp.Aspects.OnMethodBoundaryAspect::OnEntry([PostSharp]PostSharp.Aspects.MethodExecutionArgs)" Arguments="#24" Description="#25" />
+  <Annotation Target="#34=M:[OzkirFramework.Core]OzkirFramework.Core.Aspects.Postsharp.CacheAspect.CacheRemoveAspect::OnSuccess(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#24" Description="#25" />
+  <Annotation Target="#35=M:[OzkirFramework.Core]OzkirFramework.Core.Aspects.Postsharp.TransactionAspects.TransactionScopeAspect::OnEntry(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#24" Description="#25" />
+  <Annotation Target="#36=M:[OzkirFramework.Core]OzkirFramework.Core.Aspects.Postsharp.TransactionAspects.TransactionScopeAspect::OnSuccess(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#24" Description="#25" />
+  <Annotation Target="#37=M:[OzkirFramework.Core]OzkirFramework.Core.Aspects.Postsharp.TransactionAspects.TransactionScopeAspect::OnExit(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#24" Description="#25" />
+</Symbols>
